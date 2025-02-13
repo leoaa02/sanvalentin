@@ -1,0 +1,42 @@
+body {
+    background-color: #f8e0ff; /* Fondo rosa claro */
+    overflow: hidden; /* Evita barras de desplazamiento */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
+    font-family:Georgia, 'Times New Roman', Times, serif /* Fuente para el mensaje */
+}
+
+#contenedorCorazones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interactuar con elementos debajo */
+    z-index: 1000; /* Asegura que los corazones estén por encima de todo */
+}
+
+.corazon {
+    position: absolute;
+    width: 20px; /* Tamaño de los corazones */
+    height: 20px;
+    background-image: url("corazon.png"); /* Imagen de corazón (reemplaza con tu imagen) */
+    background-size: cover;
+    animation: float 5s linear infinite; /* Animación de flotación */
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh); opacity: 0; } /* Empiezan abajo y transparentes */
+    50% { opacity: 2; } /* Se hacen visibles */
+    100% { transform: translateY(-20vh); opacity: 0; } /* Terminan arriba y desaparecen */
+}
+#mensaje {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
