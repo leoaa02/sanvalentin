@@ -40,3 +40,15 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
+
+.boton{
+    border-radius:  4px;;
+    border-color: pink;
+    background-color: palevioletred;
+    
+}
+
+.boton:hover{
+    background-color: #e47fc0;
+}
+

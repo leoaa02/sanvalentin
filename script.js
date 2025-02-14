@@ -19,3 +19,4 @@ setInterval(crearCorazon, 300); // Crea corazones cada 300ms
 document.addEventListener('click', () => {
     mensaje.style.display = 'block'; // Muestra el mensaje
 });
+
